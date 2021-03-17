@@ -291,14 +291,17 @@
     display: flex
     background: #F8F6F5
     height: 230px
+    @media screen and ( max-width: 575px )
+        flex-wrap: wrap
+        height: auto
+        justify-content: center
 
 .comand__foto
     overflow: hidden
     @media screen and ( max-width: 575px )
         width: 200px
-        //height: 100px
-    @media screen and ( max-width: 400px )
-        width: 100px
+        height: 200px
+        padding-top: 10px
         
     img
         height: 100%
@@ -307,8 +310,9 @@
     padding: 20px 15px 20px 35px
     width: 100%
     @media screen and ( max-width: 575px )
-        width: auto
+        width: 100%
         padding: 15px
+        text-align: center
 
 .comand__info__name
     font-size: 25px

@@ -1,0 +1,81 @@
+.footer-section
+    background: #202020
+
+.footer__inner
+    display: flex
+    align-items: center
+    padding: 114px 0
+    @media screen and ( max-width: 1240px )
+        justify-content: space-between
+    @media screen and ( max-width: 991px )
+        flex-wrap: wrap
+    @media screen and ( max-width: 768px )
+        padding: 50px 0
+    .name-comp
+        margin-right: 85px
+        transition: 0.3s
+        @media screen and ( max-width: 1240px )
+            margin-right: 20px
+        @media screen and ( max-width: 991px )
+            flex: 0 0 100%
+            max-width: 100%
+            margin-bottom: 25px
+        a
+            &:hover
+                text-shadow: 0 3px 10px rgba(#A8CA1E, 1)
+
+.footer__box
+    display: flex
+    @media screen and ( max-width: 991px )
+        justify-content: space-between
+        width: 100%
+    @media screen and ( max-width: 768px )
+        flex-wrap: wrap
+.footer__item
+    border-left: solid 1px rgba(#707070, 0.5) 
+    padding-left: 65px
+    margin-right: 50px
+    @media screen and ( max-width: 1240px )
+        padding-left: 25px
+        margin-right: 20px
+    @media screen and ( max-width: 991px )
+        border-left: none
+        padding-left: 0
+        margin-right: 0
+    @media screen and ( max-width: 768px )
+        flex: 0 0 100%
+        flex-wrap: wrap
+        max-width: 100%
+        
+.footer__name
+    color: #A8CA1E
+    display: inline-flex
+    padding-bottom: 15px
+    margin-bottom: 25px
+    font-size: 11px
+    font-weight: 700
+    border-bottom: solid 1px #A8CA1E
+    text-transform: uppercase
+    @media screen and ( max-width: 768px )
+        margin-bottom: 15px;
+
+.footer__contacts
+    color: $bg
+    font-size: 14px
+    font-weight: 400
+    div
+        padding-bottom: 10px
+
+
+.footer__strip
+    background: #151515
+    text-align: center
+    div
+        color: $bg
+        opacity: 0.5
+        font-size: 14px
+        font-weight: 400
+        padding: 27px 0
+        
+
+    

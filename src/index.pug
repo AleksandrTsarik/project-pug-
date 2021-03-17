@@ -1,0 +1,180 @@
+extends components/particles/layout.pug
+
+block title
+  title Главная
+
+block contentBlock
+  section.offer#offer
+    .container
+      .swiper-container
+        .swiper-wrapper 
+          .swiper-slide
+            .offer__inner
+              h3.offer__title
+                | Небольшой надзаголовок
+              .offer__info 
+                | Объединяем&nbsp;ваши желания и&nbsp;лучший&nbsp;интерьерный дизайн
+              .offer_btn
+                button Подробнее
+          .swiper-slide
+            .offer__inner
+              .offer__title
+                | Небольшой надзаголовок
+              .offer__info 
+                | Объединяем&nbsp;ваши желания и&nbsp;лучший&nbsp;интерьерный дизайн2
+              .offer_btn 
+                button Подробнее
+          .swiper-slide
+            .offer__inner
+              .offer__title
+                | Небольшой надзаголовок
+              .offer__info 
+                | Объединяем&nbsp;ваши желания и&nbsp;лучший&nbsp;интерьерный дизайн3
+              .offer_btn 
+                button Подробнее
+        .swiper-button-prev.btn-top-prev
+        .swiper-button-next.btn-top-next
+      .move_down
+        a(href="#footer")  scroll 
+  section.disegn#disegn
+    .container 
+      .disegn__inner
+        .interior 
+          .interior__item.interior__item__foto._anim__items._anim_stop
+            img(src="img/interior.jpg", alt="")
+          .interior__item._anim__items._anim_stop
+            .interior__item__title.title
+              | Эмоциональный дизайн интерьера
+            .interior__item__text 
+              | Elements studio – команда амбициозных молодых профессиональных дизайнеров с тонким чувством стиля. Cоздаем&nbsp;современные&nbsp;интерьеры в которых удобно жить.
+            .interior__item__btn 
+              button
+                | ПОДРОБНЕЕ
+        .furniture#furniture
+          .furniture__inner 
+            .furniture__info.furniture__item
+              h3.furniture__title 
+                | Небольшой надзаголовок
+              .furniture__text 
+                | Как вписать скандинавскую мебель в советский интерьер
+            .furniture__bg.furniture__item
+              img(src="img/chair.png", alt="") 
+  section.feedback#feedback
+    .container
+      h2.feedback__title.title
+        | Отзывы клиентов
+      .swiper-container.swiper-container-feedback
+        .swiper-wrapper 
+          .swiper-slide.feedback-slide__inner
+            .feedback__lvl
+              | 20 лет опыта
+            .feedback__foto 
+              img(src="img/ava_ico1.svg", alt="")
+            .feedback__text 
+              | Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda vero officiis harum tempora delectus ea quaerat, error perspiciatis accusamus fuga eius eos dolorum quos ducimus.
+            .feedback__name
+              | Маруся Иванова
+          .swiper-slide.feedback-slide__inner
+            .feedback__lvl
+              | 20 лет опыта
+            .feedback__foto 
+              img(src="img/ava_ico1.svg", alt="")
+            .feedback__text 
+              | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum architecto, sed optio odio illum natus.
+            .feedback__name
+              | Маруся Иванова
+          .swiper-slide.feedback-slide__inner
+            .feedback__lvl
+              | 20 лет опыта
+            .feedback__foto 
+              img(src="img/ava_ico1.svg", alt="")
+            .feedback__text 
+              | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos necessitatibus quod, obcaecati debitis tenetur maiores consectetur. Quis temporibus, error quos incidunt nihil ex maiores voluptatem laudantium, dolor nulla nam distinctio molestiae. Est vitae ipsa ad.
+            .feedback__name
+              | Маруся Иванова
+
+
+        .swiper-button-prev.btn-feedback-prev
+        .swiper-button-next.btn-feedback-next
+  section.comand 
+    .container 
+      .comadn__title 
+        h2.comand__title.title
+          | Наша команда
+      .comand__box 
+        .comand__item._anim__items._anim_stop
+          .comand__item__inner
+            .comand__foto 
+              img(src="img/ava.jpg", alt="")
+            .comand__info 
+              .comand__info__name 
+                | Иванов Алексей
+              .comand__info__place 
+                | Ведущий менеджер отдела продаж
+              .comand__info__phone 
+                div 
+                  | +7 (343) 123-45-67 (вн. 102)
+                div 
+                  | +7 (343) 123-45-67 (вн. 102)
+              .comand__info__link
+                a(href="#") 
+                  | Написать письмо
+
+        .comand__item._anim__items._anim_stop
+          .comand__item__inner
+            .comand__foto 
+              img(src="img/ava.jpg", alt="")
+            .comand__info 
+              .comand__info__name 
+                | Иванов Алексей
+              .comand__info__place 
+                | Ведущий менеджер отдела продаж
+              .comand__info__phone 
+                div 
+                  | +7 (343) 123-45-67 (вн. 102)
+                div 
+                  | +7 (343) 123-45-67 (вн. 102)
+              .comand__info__link
+                a(href="#") 
+                  | Написать письмо
+
+        .comand__item._anim__items._anim_stop
+          .comand__item__inner
+            .comand__foto 
+              img(src="img/ava.jpg", alt="")
+            .comand__info 
+              .comand__info__name 
+                | Иванов Алексей
+              .comand__info__place 
+                | Ведущий менеджер отдела продаж
+              .comand__info__phone 
+                div 
+                  | +7 (343) 123-45-67 (вн. 102)
+                div 
+                  | +7 (343) 123-45-67 (вн. 102)
+              .comand__info__link
+                a(href="#") 
+                  | Написать письмо
+
+        .comand__item._anim__items._anim_stop
+          .comand__item__inner
+            .comand__foto 
+              img(src="img/ava.jpg", alt="")
+            .comand__info 
+              .comand__info__name 
+                | Иванов Алексей
+              .comand__info__place 
+                | Ведущий менеджер отдела продаж
+              .comand__info__phone 
+                div 
+                  | +7 (343) 123-45-67 (вн. 102)
+                div 
+                  | +7 (343) 123-45-67 (вн. 102)
+              .comand__info__link
+                a(href="#") 
+                  | Написать письмо
+
+
+
+          
+

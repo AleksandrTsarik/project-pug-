@@ -1,0 +1,58 @@
+$primary-color         : #2C4381;
+$primary-color-hover   : lighten($primary-color, 10%);
+$secondary-color       : $primary-color ;
+$secondary-color-hover : $primary-color-hover;
+$tertiary-color        : #C60101;
+$tertiary-color-hover  : darken(#C60101, 10);
+$footer-bg             : $primary-color ;
+$footer-copyright-bg   : $primary-color ;
+$bg                    : #ffffff;
+
+$gray           : #d6d6d6;
+$gray--ease     : #fafafa;
+$gray--darken   : #adadad;
+$gray-line      : #e1e1e1;
+$black          : #000;
+$disabled-color : #7f7f7f;
+
+$heading-color          : #000;
+$text-color             : #000;
+$text-color-darkbg      : #fff;
+$text-color-ease        : #7f7f7f;
+$text-color-darkbg-ease : #b4b4b4;
+$header-text-color      : #333;
+
+$block-gray-background : #e1e1e1;
+
+$link-color            : #2C4381;
+$link-color--lighten   : lighten(#033f69, 10);
+$link-hover            : darken(#033f69, 10);
+$link-active           : darken(#033f69, 10);
+$link-visited          : #2C4381;
+
+$form-focus-control-color    : $gray-line;
+$form-error-text-color       : #dc2c4d;
+$form-error-border-color     : #dc2c4d;
+$form-error-background-color : $bg;
+
+$grid-gutter-width : 20px;
+
+$z-index-header-modal-form : 3000;
+$z-index-header--fixed     : 1000;
+$footer-z-index            : 1900;
+
+$main-font   : 'helvetica', Helvetica, sans-serif;
+$second-font : 'helvetica', Helvetica, sans-serif;
+$mono-font   : Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+$font-size   : 16px;
+$line-height : 1.5;
+
+$paragraph-margin-bottom : 20px;
+
+$metadata-text-color          : $text-color-darkbg;
+$metadata-link-color          : #ffffff;
+$metadata-link-color--hover   : #ffffff;
+$metadata-btn-bg-color        : $secondary-color;
+$metadata-btn-bg-color--hover : $secondary-color-hover;
+$metadata-bg-color            : $primary-color;

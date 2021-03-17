@@ -1,0 +1,356 @@
+.title
+    font-size: 40px
+    font-weight: 500  
+    @media screen and ( max-width: 991px )
+        font-size: 36px
+    @media screen and ( max-width: 768px )
+        font-size: 30px
+    @media screen and ( max-width: 575px )
+        font-size: 26px
+//------------offer
+.offer
+    background-image: url('./../img/bg_head.jpg')
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+
+    min-height: 100vh
+    margin: 0
+    position: relative
+    
+.offer__inner
+    text-align: center
+    color: $bg
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 100%
+
+.offer__title
+    font-size: 20px
+    font-family: 'Graphik'
+    @media screen and ( max-width: 768px )
+        font-size: 16px
+.offer__info
+    font-family: 'Gerbera'
+    font-size: 50px
+    font-weight: 400
+    line-height: 130%
+    margin: 25px 0 60px 0
+    @media screen and ( max-width: 768px )
+        font-size: 30px
+        margin: 15px 0 20px 0
+    @media screen and ( max-width: 575px )
+        font-size: 20px
+.offer_btn
+    font-family: 'Graphik'
+    
+    button
+        background: none
+        outline: none
+        border: solid 1px $bg
+        border-radius: 30px
+        color: $bg
+        font-size: 13px
+        text-transform: uppercase
+        font-weight: 700
+        padding: 22px 66px
+        transition: 0.3s
+        &:hover
+            box-shadow: 0 0 15px rgba($bg , 0.5)inset
+            color: darken($bg, 15% ) 
+        @media screen and ( max-width: 768px )
+            font-size: 11px
+
+.swiper-container 
+    width: 100%
+    height: 100vh
+
+.swiper-container
+    .swiper-button-prev
+        background-image: url('./../img/arrow_swiper.svg')
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: 12%
+    .swiper-button-next
+        background-image: url('./../img/arrow_swiper.svg')
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: 12%
+        transform: rotate(180deg)
+
+.btn-top-next,
+.btn-top-prev
+    background-color: rgba(black, 0.5)
+    border-radius: 50%
+    width: 70px
+    height: 70px
+    z-index: 5
+    position: absolute
+    transition: 0.3s
+    &:hover
+        background-color: rgba(black, 1)
+
+//------------disegn
+
+.interior
+    display: flex
+    padding: 170px 0 200px 0
+    flex-wrap: wrap
+    @media screen and ( max-width: 991px )
+        padding: 100px 0 
+    @media screen and ( max-width: 768px )
+        padding: 75px 0
+    @media screen and ( max-width: 575px )
+        padding: 50px 0
+
+.interior__item__text
+    font-size: 20px
+    font-weight: 400
+    padding: 45px 0
+    @media screen and ( max-width: 991px )
+        padding: 30px 0
+    @media screen and ( max-width: 768px )
+        font-size: 16px
+.interior__item
+    padding: 0 30px
+    flex: 0 0 50%
+    max-width: 50%
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 4)
+    //opacity: 0
+    transition: 0.3s
+    
+    @media screen and ( max-width: 991px )
+        flex: 0 0 100%
+        max-width: 100%
+        padding: 30px 0
+
+.interior__item._active
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    //opacity: 1
+
+.interior__item__foto
+    padding: 0 90px 0 120px
+    img
+        @media screen and ( max-width: 991px )
+            width: 100%
+    @media screen and ( max-width: 991px )
+        padding: 0 
+
+        
+.interior__item__btn
+    @media screen and ( max-width: 991px )
+        margin-top: 40px
+        text-align: center
+    button
+        text-transform: uppercase
+        font-size: 13px
+        font-weight: 700
+        border: solid 2px $text-color 
+        color: $text-color 
+        border-radius: 30px
+        background: none
+        padding: 21px 67px
+        transition: 0.3s
+        &:hover
+            background: lighten($text-color, 90% )
+            color: lighten($text-color, 30% )
+        @media screen and ( max-width: 575px )
+            font-size: 11px
+.furniture__inner
+    background: #F8F6F5
+    display: flex
+    padding: 80px 75px 100px 75px 
+    position: relative
+    @media screen and ( max-width: 768px )
+        flex-wrap: wrap
+        padding: 40px 30px
+.furniture__text 
+    font-size: 40px
+    font-weight: 500
+    @media screen and ( max-width: 768px )
+        font-size: 24px
+.furniture__info
+    padding-right: 100px
+    @media screen and ( max-width: 575px )
+        padding: 0
+.furniture__title
+    font-size: 20px
+    font-weight: 500
+    opacity: 0.5
+.furniture__bg 
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translateY(-50%)
+    padding-right: 30px
+    @media screen and ( max-width: 768px )
+        width: 300px
+        height: 300px
+        position: relative
+        margin-bottom: 200px
+    @media screen and ( max-width: 768px )
+        display: none
+.furniture__item
+    flex: 0 0 50%
+    max-width: 50%
+    @media screen and ( max-width: 768px )
+        flex: 0 0 100%
+        max-width: 100%
+        
+
+.furniture
+    margin-bottom: 165px
+    @media screen and ( max-width: 768px )
+        margin-bottom: 100px
+    @media screen and ( max-width: 575px )
+        margin-bottom: 50px
+
+//------------feedback
+.feedback
+    background-color: #F8F6F5
+    
+.feedback__title
+    text-align: center
+    padding: 115px 0 15px 0
+    @media screen and ( max-width: 768px )
+        padding-top: 50px
+
+.feedback-slide__inner
+    text-align: center
+.feedback__text
+    padding: 0 200px
+    @media screen and ( max-width: 991px )
+        padding: 0 100px
+    @media screen and ( max-width: 768px )
+        padding: 0 
+
+        
+
+.feedback__lvl
+    font-size: 18px
+    colro: #626262
+    @media screen and ( max-width: 768px )
+        font-size: 14px
+
+.feedback__foto
+    padding: 40px 0 25px 0
+.swiper-container-feedback
+    height: auto
+.feedback__text
+    font-size: 20px
+    font-style: italic
+    margin-bottom: 60px
+    @media screen and ( max-width: 768px )
+        font-size: 16px
+        margin-bottom: 25px
+.feedback__name
+    padding-bottom: 85px
+    @media screen and ( max-width: 768px )
+        padding-bottom: 50px
+
+.btn-feedback-next,
+.btn-feedback-prev
+    background-color: $black  
+    border-radius: 50%
+    width: 55px
+    height: 55px
+    z-index: 5
+    position: absolute
+    transition: 0.3s
+    box-shadow: 0 3px 6px rgba($black, 0.5)
+   
+    &:hover
+        background-color: $form-error-text-color 
+        box-shadow: 0 3px 6px rgba($form-error-text-color , 0.5)
+
+//------------comand
+.comand
+    padding: 115px 0 135px 0
+    @media screen and ( max-width: 768px )
+        padding: 80px 0
+    @media screen and ( max-width: 575px )
+        padding: 50px 0
+.comand__box
+    display: flex
+    flex-wrap: wrap
+    margin: 45px -10px 0 -10px
+.comand__item
+    flex: 0 0 50%
+    max-width: 50%
+    padding: 10px
+    transition: 0.3s
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 4)
+    @media screen and ( max-width: 991px )
+        flex: 0 0 100%
+        max-width: 100%
+.comand__item._active
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+.comand__item__inner
+    display: flex
+    background: #F8F6F5
+    height: 230px
+
+.comand__foto
+    overflow: hidden
+    @media screen and ( max-width: 575px )
+        width: 200px
+        //height: 100px
+    @media screen and ( max-width: 400px )
+        width: 100px
+        
+    img
+        height: 100%
+        width: 100%
+.comand__info
+    padding: 20px 15px 20px 35px
+    width: 100%
+    @media screen and ( max-width: 575px )
+        width: auto
+        padding: 15px
+
+.comand__info__name
+    font-size: 25px
+    color: #272727
+    padding-bottom: 10px
+    @media screen and ( max-width: 768px )
+        font-size: 18px
+    
+.comand__info__place
+    font-size: 15px
+    font-weight: 400
+    colro: #676767
+    padding-bottom: 20px
+    @media screen and ( max-width: 575px )
+        padding-bottom: 5px
+
+.comand__info__phone
+    color: #2C2C2C
+    font-size: 15px
+    font-weight: 500
+    padding-bottom: 20px
+    @media screen and ( max-width: 768px )
+        font-size: 12px
+    @media screen and ( max-width: 575px )
+        padding-bottom: 5px
+
+.comand__info__link
+    a
+        color: #DA3038
+        border-bottom: solid 1px #DA3038
+        text-decoration: none
+
+.swiper-button-prev,
+.swiper-button-next
+    @media screen and ( max-width: 991px )
+        display: none
+
+.move_down
+    text-align: center
+    a
+        color: $bg
+        text-transform: uppercase
+        font-size: 15px
+        font-weight: 500
+        text-decoration: none

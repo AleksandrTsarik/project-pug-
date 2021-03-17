@@ -1,0 +1,146 @@
+html {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+*, *:before, *:after {
+  outline: none;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  min-height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+.main-content {
+  flex-grow: 1;
+}
+.container {
+  width: 100%;
+  max-width: 1296px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 25px;
+}
+.container.bg {
+  max-width: 1276px;
+}
+.container-small {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-full {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.std-section {
+  padding: 20px 70px;
+}
+.std-section.heading-section {
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0;
+  }
+}
+.full-section {
+  padding-left: 0;
+  padding-right: 0;
+  >.container {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    .content {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .ymap__map-sm.content {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .ymap__map-lg.content {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  >.container.bg {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    .content {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+.full-section.heading-section {
+  >.container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  >.container.bg {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.heading-section {
+  padding-top: 0;
+  padding-bottom: 0;
+  &:first-child {
+    padding-top: 20px;
+  }
+  &:last-child {
+    padding-bottom: 20px;
+  }
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+html.no-scroll {
+  overflow-y: hidden;
+  padding-right: 15px;
+}
+
+.posr {
+  position: relative;
+}
+
+.page-head {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .std-section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 1px) and (max-width: 1024px) {
+  .std-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

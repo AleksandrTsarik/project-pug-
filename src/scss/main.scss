@@ -1,0 +1,21 @@
+// @import "~bootstrap/scss/bootstrap-grid";
+@import "~bootstrap/scss/bootstrap-reboot";
+@import "~animate.css";
+
+@import "./variables.scss";
+@import "./fonts.scss";
+// @import "./typography.scss";
+// @import "./styles.scss";
+@import "./layout.scss";
+@import "./buttons.scss";
+@import "./helper.scss";
+
+
+@import "./particles/header.scss";
+@import "./particles/footer.scss";
+
+@import "./../sass/header_dev.sass";
+@import "./../sass/body_dev.sass";
+@import "./../sass/footer_dev.sass";
+
+@import "../../node_modules/swiper/dist/css/swiper.css";

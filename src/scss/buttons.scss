@@ -1,0 +1,56 @@
+a.btn, .btn {
+  height: 40px;
+  max-width: 160px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: $main-font;
+  font-weight: 500;
+  border-width: 0;
+  border-radius: 0;
+  background-position: center center;
+  border-style: solid;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
+a.btn--primary, .btn--primary {
+  color: #fff;
+  background: $primary-color;
+  &:hover {
+    color: #fff;
+    background: $primary-color-hover;
+  }
+}
+a.btn--secondary, .btn--secondary {
+  color: #fff;
+  background: $secondary-color;
+  &:hover {
+    color: #fff;
+    background: $secondary-color-hover;
+  }
+}
+a.btn--tertiary, .btn--tertiary {
+  color: #c4c4c4;
+  border-color: #c4c4c4;
+  &:hover {
+    color: lighten(#c4c4c4, 10);
+    border-color: lighten(#c4c4c4, 10);
+  }
+}
+
+.btn-js-submit {
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  & .btn:not(:last-child) {
+    margin-right: 10px;
+  }
+}

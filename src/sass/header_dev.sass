@@ -1,0 +1,87 @@
+.header-section
+    position: absolute
+    width: 100%
+    z-index: 5
+    font-family: 'Gerbera'
+.header__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 25px 0
+    flex-wrap: wrap
+.nav
+    @media screen and ( max-width: 991px )
+        order: 1
+        width: 100%
+.name-comp 
+    font-size: 35px
+    font-weight: 700
+    line-height: 1
+    @media screen and ( max-width: 768px )
+        font-size: 25px
+    span
+        font-size: 13px
+        font-weight: 300
+    a
+        color: $bg
+        display: flex
+        flex-direction: column
+        text-decoration: none
+        transition: 0.3s
+        &:hover
+            text-shadow: 0 0 10px rgba(black, 0.5)
+.list
+    display: flex
+    align-items: center
+    @media screen and ( max-width: 991px )
+        justify-content: space-between
+        margin-top: 20px
+.list__item
+    margin-right: 50px
+    @media screen and ( max-width: 991px )
+        margin: 0 
+    a
+        font-size: 15px
+        color: $bg
+        text-decoration: none
+        position: relative
+        @media screen and ( max-width: 575px )
+            font-size: 12px
+        &::after
+            display: block
+            content: ""
+            background-color: $form-error-text-color
+            height: 3px
+            width: 0%
+            transition: 0.3s
+            transform: translateX(-50%)
+            position: absolute
+            left: 50%
+            margin-bottom: 10px
+        &:hover:after, &:hover:before
+            width: 100%
+.phone
+    display: flex
+    align-items: center
+    &__ico
+        margin-right: 15px
+    @media screen and ( max-width: 991px )
+        order: 0
+.phone__number
+    display: flex
+    flex-direction: column
+    a
+        color: $bg
+        text-decoration: none
+        fntz: 19px
+        font-weight: 400
+        &:hover
+            text-shadow: 0 0 10px rgba(black, 0.5)
+    span
+        color: #cbcbcb
+        font-size: 16px
+        @media screen and ( max-width: 768px )
+            font-size: 12px
+
+
+
